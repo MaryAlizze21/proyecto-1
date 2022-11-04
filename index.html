@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
-        <div class="cabecera">
-            <div>
-                <a href="./index.html">INICIO</a>
+    <header class="bloque">
+        <div class="centrar">
+            <div class="logo">
+                <h3>CUSCO</h3>
             </div>
-            <nav>     <!--barra de navegacion-->
+            <nav class="menu-principal">     <!--barra de navegacion-->
                 <ul>
+                    <li><a href="./index.html">INICIO</a></li>
                     <li><a href="./pages/turismo.html">TURISMO</a></li>
                     <li><a href="./pages/curiosidades.html">CURIOSIDADES</a></li>
                     <li><a href="./pages/more.html">MAS+</a></li>
@@ -22,15 +24,50 @@
                 </ul>
             </nav>
         </div>
-    </header>
-    <main>
-        <div class="info"><br>
-            <h1>Viajando por el Peru</h1> <br>
-            <h2>Cusco, una ciudad por descubrir</h2> <br>      
-        </div>
-        <img src="assets/foto.jpg" alt="Viajando">  
-        <img src="assets/foto1.jpg" alt="Viajando">
-        <img src="assets/foto2.jpg" alt="Viajando">
+    </header><br>
+    <h2>DESCUBRIENDO LA CIUDAD IMPERIAL</h2><br>  
+    <main class="container-1">
+        <section>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/ft5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Plaza de Armas del Cusco</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/ft4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Danza Qhapaq Qolla</h5>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/ft3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Nevado Ausangate, Cusco</h5>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
     </main>
+
+    <!--script-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 </body>
 </html>
